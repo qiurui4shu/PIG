@@ -1,8 +1,4 @@
-# Obtained from: https://github.com/lhoyer/DAFormer
-# Modifications:
-# - Delete tensors after usage to free GPU memory
-# - Add HRDA debug visualizations
-# - Support ImageNet feature distance for LR and HR predictions of HRDA
+# Obtained from: https://github.com/lhoyer/HRDA
 # ---------------------------------------------------------------
 # Copyright (c) 2021-2022 ETH Zurich, Lukas Hoyer. All rights reserved.
 # Licensed under the Apache License, Version 2.0
