@@ -84,7 +84,7 @@ The predictions can be submitted to the public evaluation server of the respecti
 
 | Method | Adaptation | mIoU | Config | Checkpoints |
 | :---: | :---: | :---: | :---: | :---: |
-| PIG (HRDA) | Cityscapes --> Dark Zurich  | 59.06 | [Config](https://drive.google.com/file/d/1Uzwt25Q39cNX58TqNXFWHIEMB-p6EgPz/view?usp=share_link) | [Checkpoints]() |
+| PIG (HRDA) | Cityscapes --> Dark Zurich  | 59.06 | [Config](https://drive.google.com/file/d/1Uzwt25Q39cNX58TqNXFWHIEMB-p6EgPz/view?usp=share_link) | [Checkpoints](https://drive.google.com/file/d/141oRrXr97Yj4gzc46lixWIDvtAdvAh-7/view?usp=share_link) |
 
 ## Acknowledgements
 
