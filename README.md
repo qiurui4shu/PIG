@@ -1,5 +1,6 @@
 ## PIG: Prompt Images Guidance for Night-time Scene Parsing
 
+![PIG Overview](resources/pipeline.png)
 
 ## Overview
 Night-time scene parsing aims to extract pixel-level semantic information in night images, aiding downstream tasks in understanding scene object distribution. Due to limited labeled night image datasets, unsupervised domain adaptation (UDA) has become the predominant method for studying night scenes. 
