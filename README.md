@@ -11,15 +11,81 @@ We conduct extensive experiments on four night-time datasets: **NightCity**, **N
 
 ![PIG compare](resources/PIG_compare.png)
 
-## Setup Environment
+## Setup
 This PIG (HRDA) code builds upon [MMSegmentation](https://github.com/open-mmlab/mmsegmentation) and [HRDA](https://github.com/lhoyer/HRDA). We highly recommend that you familiarize yourself with MMSegmentation and HRDA before exploring this code. Additionally, when running the code, it is natural to encounter issues, and referring to the baseline code issues may assist you in resolving them more expeditiously and effectively.
 
+We use Python 3.8.16 and recommend setting up a new virtual environment:
+```shell
+conda create -n pig python=3.8.16
+conda activate pig
+```
+In that environment, the requirements can be installed with:
+```shell
+pip install -r requirements.txt -f https://download.pytorch.org/whl/torch_stable.html
+pip install -U openmim
+mim install mmcv-full==1.3.7
+```
+
+Please refer to HRDA for MiT_b5 and data set download and data set processing. Please refer to [FDLNet](https://github.com/wangsen99/FDLNet) for NightCity. The final folder structure should look like this:
+
+```shell
+PIG
+├── ...
+├── pretrained
+│   ├── mit_b5.pth
+├── data
+│   ├── acdc
+│   │   ├── gt
+│   │   │   ├── train
+│   │   │   ├── val
+│   │   ├── rgb_anon
+│   │   │   ├── train
+│   │   │   ├── val
+│   ├── cityscapes
+│   │   ├── leftImg8bit
+│   │   │   ├── train
+│   │   │   ├── val
+│   │   ├── gtFine
+│   │   │   ├── train
+│   │   │   ├── val
+│   ├── dark_zurich
+│   │   ├── gt
+│   │   │   ├── val
+│   │   ├── rgb_anon
+│   │   │   ├── train
+│   │   │   ├── val
+│   ├── nightcity
+│   │   ├── gt
+│   │   │   ├── train
+│   │   │   ├── val
+│   │   ├── img
+│   │   │   ├── train
+│   │   │   ├── val
+│   ├── prompt
+│   │   ├── gt
+│   │   ├── img
+```
+
+Please note that the code is properly adjusted according to the prompt images you choose.
+
+## Training & Testing
+Let's take Cityscapes --> NightCity as an example and run it for training:
+```shell
+python run_experiments.py --config configs/pig/pig_city2nightcity.py
+```
+
+The results for Cityscapes --> ACDC and Cityscapes --> DarkZurich are reported on the test split of the target dataset. To generate the predictions for the test set, please run:
+```shell
+python tools/test.py path/to/config_file path/to/checkpoint_file --test-set --format-only --eval-option imgfile_prefix=labelTrainIds to_label_id=False
+```
+The predictions can be submitted to the public evaluation server of the respective dataset to obtain the test score.
+
+## Checkpoints
 
 
 ## Acknowledgements
 
-PIG is based on the following open-source projects. We thank their
-authors for making the source code publicly available.
+PIG is based on the following open-source projects. We thank their authors for making the source code publicly available.
 
 * [DAFormer](https://github.com/lhoyer/DAFormer)
 * [HRDA](https://github.com/lhoyer/HRDA)
@@ -30,7 +96,5 @@ authors for making the source code publicly available.
 
 ## License
 
-This project is released under the [Apache License 2.0](LICENSE), while some
-specific features in this repository are with other licenses. Please refer to
-[LICENSES.md](LICENSES.md) for the careful check, if you are using our code for
-commercial matters.
+This project is released under the [Apache License 2.0](LICENSE), while some specific features in this repository are with other licenses. Please refer to
+[LICENSES.md](LICENSES.md) for the careful check, if you are using our code for commercial matters.
