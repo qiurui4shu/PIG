@@ -12,3 +12,22 @@ We conduct extensive experiments on four night-time datasets: **NightCity**, **N
 ![PIG compare](resources/PIG_compare.png)
 
 ## Setup Environment
+
+## Acknowledgements
+
+PIG is based on the following open-source projects. We thank their
+authors for making the source code publicly available.
+
+* [DAFormer](https://github.com/lhoyer/DAFormer)
+* [HRDA](https://github.com/lhoyer/HRDA)
+* [MMSegmentation](https://github.com/open-mmlab/mmsegmentation)
+* [SegFormer](https://github.com/NVlabs/SegFormer)
+* [DACS](https://github.com/vikolss/DACS)
+* [SHADE](https://github.com/HeliosZhao/SHADE)
+
+## License
+
+This project is released under the [Apache License 2.0](LICENSE), while some
+specific features in this repository are with other licenses. Please refer to
+[LICENSES.md](LICENSES.md) for the careful check, if you are using our code for
+commercial matters.
