@@ -10,4 +10,4 @@ Classes with less domain similarities are predicted by NFNet, which excels in pa
 
 We conduct extensive experiments on four night-time datasets: **NightCity**, **NightCity+**, **Dark Zurich**, and **ACDC**. The results indicate that utilizing PIG can enhance the parsing accuracy of UDA.
 
-![PIG compare](resources/pig_compare.png)
+![PIG compare](resources/PIG_compare.png)
