@@ -12,6 +12,9 @@ We conduct extensive experiments on four night-time datasets: **NightCity**, **N
 ![PIG compare](resources/PIG_compare.png)
 
 ## Setup Environment
+This PIG (HRDA) code builds upon [MMSegmentation](https://github.com/open-mmlab/mmsegmentation) and [HRDA](https://github.com/lhoyer/HRDA). We highly recommend that you familiarize yourself with MMSegmentation and HRDA before exploring this code. Additionally, when running the code, it is natural to encounter issues, and referring to the baseline code issues may assist you in resolving them more expeditiously and effectively.
+
+
 
 ## Acknowledgements
 
