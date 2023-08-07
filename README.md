@@ -9,3 +9,5 @@ We leverage **Prompt Images Guidance (PIG)** to enhance UDA with supplementary n
 Classes with less domain similarities are predicted by NFNet, which excels in parsing night features, while classes with more domain similarities are predicted by UDA, which has rich labeled semantics. Additionally, we propose two data augmentation strategies: the **Prompt Mixture Strategy (PMS)** and the **Alternate Mask Strategy (AMS)**, aimed at mitigating overfitting of the NFNet to few prompt images.
 
 We conduct extensive experiments on four night-time datasets: **NightCity**, **NightCity+**, **Dark Zurich**, and **ACDC**. The results indicate that utilizing PIG can enhance the parsing accuracy of UDA.
+
+![PIG compare](resources/pig_compare.png)
