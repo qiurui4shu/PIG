@@ -6,6 +6,7 @@ MMCV_MIN = '1.3.7'
 MMCV_MAX = '1.4.0'
 
 
+
 def digit_version(version_str):
     digit_version = []
     for x in version_str.split('.'):
