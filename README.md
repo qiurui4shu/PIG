@@ -1,5 +1,5 @@
 ## PIG: Prompt Images Guidance for Night-time Scene Parsing
-by Zhifeng Xie, Rui Qiu, Sen Wang, [Xin Tan*](https://tanxincs.github.io), Yuan Xie
+by Zhifeng Xie, Rui Qiu, Sen Wang, [Xin Tan*](https://tanxincs.github.io), Yuan Xie, and Lizhuang Ma
 ## Overview
 
 ![PIG_Pipeline](resources/PIG_Pipeline.png)
