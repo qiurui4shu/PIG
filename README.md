@@ -2,7 +2,7 @@
 by Zhifeng Xie, Rui Qiu, Sen Wang, [Xin Tan*](https://tanxincs.github.io), Yuan Xie
 ## Overview
 
-![PIG_Pineline](resources/PIG_Pineline)
+![PIG_Pipeline](resources/PIG_Pipeline)
 
 Night-time scene parsing aims to extract pixel-level semantic information in night images, aiding downstream tasks in understanding scene object distribution. Due to limited labeled night image datasets, **unsupervised domain adaptation (UDA)** has become the predominant method for studying night scenes. 
 UDA typically relies on paired day-night image pairs to guide adaptation, but this approach hampers dataset construction and restricts generalization across night scenes in different datasets. Moreover, UDA, focusing on network architecture and training strategies, faces difficulties in handling classes with few domain similarities.
