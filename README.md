@@ -1,6 +1,9 @@
 ## PIG: Prompt Images Guidance for Night-time Scene Parsing
-by Zhifeng Xie, Rui Qiu, Sen Wang, Xin Tan, Yuan Xie
+by Zhifeng Xie, Rui Qiu, Sen Wang, [Xin Tan*](https://tanxincs.github.io), Yuan Xie
 ## Overview
+
+![PIG_Pineline](resources/PIG_Pineline)
+
 Night-time scene parsing aims to extract pixel-level semantic information in night images, aiding downstream tasks in understanding scene object distribution. Due to limited labeled night image datasets, **unsupervised domain adaptation (UDA)** has become the predominant method for studying night scenes. 
 UDA typically relies on paired day-night image pairs to guide adaptation, but this approach hampers dataset construction and restricts generalization across night scenes in different datasets. Moreover, UDA, focusing on network architecture and training strategies, faces difficulties in handling classes with few domain similarities.
 
@@ -85,6 +88,19 @@ The predictions can be submitted to the public evaluation server of the respecti
 | Method | Adaptation | mIoU | Config | Checkpoints |
 | :---: | :---: | :---: | :---: | :---: |
 | PIG (HRDA) | Cityscapes --> Dark Zurich  | 59.06 | [Config](https://drive.google.com/file/d/1Uzwt25Q39cNX58TqNXFWHIEMB-p6EgPz/view?usp=share_link) | [Checkpoints](https://drive.google.com/file/d/141oRrXr97Yj4gzc46lixWIDvtAdvAh-7/view?usp=share_link) |
+
+## Citation
+If you find this repo useful for your research, please consider citing our paper:
+```
+@article{xie2024PIG,
+  title={PIG: Prompt Images Guidance for Night-Time Scene Parsing},
+  author={Xie, Zhifeng and Qiu, Rui and Wang, Sen and Tan, Xin and Xie, Yuan and Ma, Lizhuang},
+  journal={IEEE Transactions on Image Processing},
+  year={2024},
+  publisher={IEEE},
+  doi={10.1109/TIP.2024.3415963}
+}
+```
 
 ## Acknowledgements
 
