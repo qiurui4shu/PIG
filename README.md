@@ -92,14 +92,15 @@ The predictions can be submitted to the public evaluation server of the respecti
 ## Citation
 If you find this repo useful for your research, please consider citing our paper:
 ```
-@article{xie2024PIG,
-  title={PIG: Prompt Images Guidance for Night-Time Scene Parsing},
+@ARTICLE{10570214,
   author={Xie, Zhifeng and Qiu, Rui and Wang, Sen and Tan, Xin and Xie, Yuan and Ma, Lizhuang},
-  journal={IEEE Transactions on Image Processing},
+  journal={IEEE Transactions on Image Processing}, 
+  title={PIG: Prompt Images Guidance for Night-Time Scene Parsing}, 
   year={2024},
-  publisher={IEEE},
-  doi={10.1109/TIP.2024.3415963}
-}
+  volume={33},
+  number={},
+  pages={3921-3934},
+  doi={10.1109/TIP.2024.3415963}}
 ```
 
 ## Acknowledgements
